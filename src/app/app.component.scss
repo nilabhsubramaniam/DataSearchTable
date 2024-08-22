@@ -20,5 +20,33 @@
         }
       }
     }
+  
+    .button-row {
+      display: flex;
+      justify-content: flex-start; // Align buttons to the left
+      gap: 16px; // Space between buttons
+      margin-top: 16px; // Space above the button row
+  
+      .action-button {
+        border-radius: 8px; // Apply rounded corners to buttons
+        transition: background-color 0.3s, color 0.3s;
+  
+        &:hover {
+          color: #fff; // Text color on hover
+        }
+      }
+  
+      .apply-button:hover {
+        background-color: darken(#3f51b5, 10%); // Darken for apply button on hover
+      }
+  
+      .cancel-button:hover {
+        background-color: darken(#ff4081, 10%); // Darken for cancel button on hover
+      }
+  
+      .reset-button:hover {
+        background-color: darken(#f44336, 10%); // Darken for reset button on hover
+      }
+    }
   }
   
